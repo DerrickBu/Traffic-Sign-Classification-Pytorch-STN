@@ -1,0 +1,153 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontsize=12 height=0.2 ranksep=0.1 shape=box style=filled]
+	4727492392 [label=LogSoftmaxBackward]
+	4727492448 -> 4727492392
+	4727492448 [label=ThAddmmBackward]
+	4727492560 -> 4727492448
+	4727492560 [label=ExpandBackward]
+	4765905080 -> 4727492560
+	4765905080 [label="
+ (43)" fillcolor=lightblue]
+	4727574600 -> 4727492448
+	4727574600 [label=FeatureDropoutBackward]
+	4765905136 -> 4727574600
+	4765905136 [label=ReluBackward]
+	4765905192 -> 4765905136
+	4765905192 [label=ThAddmmBackward]
+	4765905360 -> 4765905192
+	4765905360 [label=ExpandBackward]
+	4765905584 -> 4765905360
+	4765905584 [label="
+ (200)" fillcolor=lightblue]
+	4765905416 -> 4765905192
+	4765905416 [label=ViewBackward]
+	4765905640 -> 4765905416
+	4765905640 [label=ThnnBatchNormBackward]
+	4765905696 -> 4765905640
+	4765905696 [label=MaxPool2DWithIndicesBackward]
+	4765905976 -> 4765905696
+	4765905976 [label=LeakyReluBackward0]
+	4765906088 -> 4765905976
+	4765906088 [label=ThnnConv2DBackward]
+	4765906200 -> 4765906088
+	4765906200 [label=ThnnBatchNormBackward]
+	4765906424 -> 4765906200
+	4765906424 [label=MaxPool2DWithIndicesBackward]
+	4765906648 -> 4765906424
+	4765906648 [label=LeakyReluBackward0]
+	4765906760 -> 4765906648
+	4765906760 [label=ThnnConv2DBackward]
+	4765906872 -> 4765906760
+	4765906872 [label=ThnnBatchNormBackward]
+	4765907096 -> 4765906872
+	4765907096 [label=MaxPool2DWithIndicesBackward]
+	4765907320 -> 4765907096
+	4765907320 [label=LeakyReluBackward0]
+	4765907432 -> 4765907320
+	4765907432 [label=ThnnConv2DBackward]
+	4765907600 -> 4765907432
+	4765907600 [label=ThnnGridSamplerBilinear2DBackward]
+	4723318176 -> 4765907600
+	4723318176 [label=AffineGridGeneratorBackward]
+	4765907880 -> 4723318176
+	4765907880 [label=ViewBackward]
+	4765908048 -> 4765907880
+	4765908048 [label=ThAddmmBackward]
+	4765908216 -> 4765908048
+	4765908216 [label=ExpandBackward]
+	4765908440 -> 4765908216
+	4765908440 [label="
+ (6)" fillcolor=lightblue]
+	4765908272 -> 4765908048
+	4765908272 [label=ThresholdBackward1]
+	4765908496 -> 4765908272
+	4765908496 [label=ThAddmmBackward]
+	4765908608 -> 4765908496
+	4765908608 [label=ExpandBackward]
+	4765908888 -> 4765908608
+	4765908888 [label="
+ (200)" fillcolor=lightblue]
+	4765908720 -> 4765908496
+	4765908720 [label=ViewBackward]
+	4765908944 -> 4765908720
+	4765908944 [label=ThresholdBackward1]
+	4765921408 -> 4765908944
+	4765921408 [label=MaxPool2DWithIndicesBackward]
+	4765921632 -> 4765921408
+	4765921632 [label=ThnnConv2DBackward]
+	4765921800 -> 4765921632
+	4765921800 [label=ThresholdBackward1]
+	4765922024 -> 4765921800
+	4765922024 [label=MaxPool2DWithIndicesBackward]
+	4765922192 -> 4765922024
+	4765922192 [label=ThnnConv2DBackward]
+	4765922360 -> 4765922192
+	4765922360 [label="
+ (200, 1, 7, 7)" fillcolor=lightblue]
+	4765922416 -> 4765922192
+	4765922416 [label="
+ (200)" fillcolor=lightblue]
+	4765921856 -> 4765921632
+	4765921856 [label="
+ (300, 200, 5, 5)" fillcolor=lightblue]
+	4765921912 -> 4765921632
+	4765921912 [label="
+ (300)" fillcolor=lightblue]
+	4765908776 -> 4765908496
+	4765908776 [label=TBackward]
+	4765921464 -> 4765908776
+	4765921464 [label="
+ (200, 4800)" fillcolor=lightblue]
+	4765908328 -> 4765908048
+	4765908328 [label=TBackward]
+	4765908664 -> 4765908328
+	4765908664 [label="
+ (6, 200)" fillcolor=lightblue]
+	4765907656 -> 4765907432
+	4765907656 [label="
+ (100, 1, 3, 3)" fillcolor=lightblue]
+	4765907712 -> 4765907432
+	4765907712 [label="
+ (100)" fillcolor=lightblue]
+	4765907152 -> 4765906872
+	4765907152 [label="
+ (100)" fillcolor=lightblue]
+	4765907208 -> 4765906872
+	4765907208 [label="
+ (100)" fillcolor=lightblue]
+	4765906928 -> 4765906760
+	4765906928 [label="
+ (150, 100, 4, 4)" fillcolor=lightblue]
+	4765906984 -> 4765906760
+	4765906984 [label="
+ (150)" fillcolor=lightblue]
+	4765906480 -> 4765906200
+	4765906480 [label="
+ (150)" fillcolor=lightblue]
+	4765906536 -> 4765906200
+	4765906536 [label="
+ (150)" fillcolor=lightblue]
+	4765906256 -> 4765906088
+	4765906256 [label="
+ (250, 150, 3, 3)" fillcolor=lightblue]
+	4765906312 -> 4765906088
+	4765906312 [label="
+ (250)" fillcolor=lightblue]
+	4765905808 -> 4765905640
+	4765905808 [label="
+ (250)" fillcolor=lightblue]
+	4765905864 -> 4765905640
+	4765905864 [label="
+ (250)" fillcolor=lightblue]
+	4765905472 -> 4765905192
+	4765905472 [label=TBackward]
+	4765905752 -> 4765905472
+	4765905752 [label="
+ (200, 1000)" fillcolor=lightblue]
+	4765904968 -> 4727492448
+	4765904968 [label=TBackward]
+	4765905248 -> 4765904968
+	4765905248 [label="
+ (43, 200)" fillcolor=lightblue]
+}
